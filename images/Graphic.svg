@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="669" height="589" viewBox="0 0 669 589">
+  <g id="Graphic" transform="translate(-989 -195)">
+    <rect id="Rectangle_4"  class="square-anim" data-name="Rectangle 4" width="169" height="148" rx="25" transform="translate(1326 195)" fill="#6e00ff"/>
+    <rect id="Rectangle_6"  class="square-anim" data-name="Rectangle 6" width="169" height="148" rx="25" transform="translate(1326 488)" fill="#6e00ff"/>
+    <rect id="Rectangle_8"  class="square-anim" data-name="Rectangle 8" width="169" height="148" rx="25" transform="translate(989 488)" fill="#f6f4f9" opacity="0.46"/>
+    <rect id="Rectangle_7"  class="square-anim" data-name="Rectangle 7" width="169" height="148" rx="25" transform="translate(1489 343)" fill="#6e00ff" opacity="0.43"/>
+    <rect id="Rectangle_5"  class="square-anim" data-name="Rectangle 5" width="169" height="148" rx="25" transform="translate(1157 343)" fill="#f4f0f8"/>
+    <rect id="Rectangle_9"  class="square-anim" data-name="Rectangle 9" width="169" height="148" rx="25" transform="translate(1157 636)" fill="#f4f0f8"/>
+    <ellipse id="Ellipse_3" class="square-anim"  data-name="Ellipse 3" cx="59.5" cy="61.5" rx="59.5" ry="61.5" transform="translate(1182 502)" fill="#fa007b" opacity="0.6"/>
+  </g>
+</svg>
