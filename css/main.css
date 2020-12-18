@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   height: 100vh;
   margin: 0;
@@ -25,6 +29,13 @@ img {
 
 .nav-container a {
   color: white;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.nav-container a:hover {
+  border-bottom: 2px red solid;
+  padding-bottom: 0.5rem;
 }
 
 header {
@@ -315,6 +326,16 @@ section {
   .hero .content {
     padding: 9em 20em 6em 20em;
   }
+}
+
+footer {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  background: #2b2b2b;
+  padding: 1rem 0;
+  color: white;
+  font-size: 0.8em;
 }
 
 .line {
