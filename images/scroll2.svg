@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35" height="75" viewBox="0 0 35 75">
+  <g id="scroll" transform="translate(-194 -696)">
+    <g id="Rectangle_3" data-name="Rectangle 3" transform="translate(194 696)" fill="none" stroke="#fbf3f3" stroke-width="4">
+      <rect width="35" height="75" rx="17.5" stroke="none"/>
+      <rect x="2" y="2" width="31" height="71" rx="15.5" fill="none"/>
+    </g>
+    <line id="Line_1" data-name="Line 1" y2="15" transform="translate(211.5 712.5)" fill="none" stroke="#f8f3f3" stroke-width="2"/>
+    <path id="Polygon_5" data-name="Polygon 5" d="M4.5,0,9,9H0Z" transform="translate(216 735) rotate(180)" fill="#fff"/>
+  </g>
+</svg>

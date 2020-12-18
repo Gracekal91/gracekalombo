@@ -32,9 +32,10 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 2rem;
-    &.logo{
+    .logo{
         color:#FA007B ;
-        font-weight: 700;
+        font-weight: 500;
+       font-size: 1.5em;
     }
    
         ul{
@@ -205,7 +206,7 @@ header{
     // } 
     .nav-container{
         display: grid;
-        grid-template-columns: 66% auto;
+        grid-template-columns: 77% auto;
         background: unset;
 
         header{
@@ -225,12 +226,17 @@ header{
 
             img{
                 width: 20px;
+                cursor: pointer;
+                transition: 1s;
+            }
+            img:hover{
+                transform: scale(1.5);
             }
         }
     }
     .hero{
         display: grid;
-        grid-template-columns: 66% auto;
+        grid-template-columns: 77% auto;
         background: unset;
         padding: 0;
         .content{
@@ -294,3 +300,21 @@ header{
     }
  
  }
+
+
+
+//  ANIMATION
+
+.line{
+    animation: lineAnim 1s infinite alternate-reverse;
+}
+
+@keyframes lineAnim{
+    from{
+        transform:translate(205px, 709px);
+        
+    }
+    to{
+        transform:translate(205px, 750px);
+    }
+}

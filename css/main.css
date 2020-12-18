@@ -37,9 +37,10 @@ header {
   padding: 2rem;
 }
 
-header.logo {
+header .logo {
   color: #FA007B;
-  font-weight: 700;
+  font-weight: 500;
+  font-size: 1.5em;
 }
 
 header ul {
@@ -221,8 +222,8 @@ section {
   .nav-container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 66% auto;
-        grid-template-columns: 66% auto;
+    -ms-grid-columns: 77% auto;
+        grid-template-columns: 77% auto;
     background: unset;
   }
   .nav-container header {
@@ -246,12 +247,19 @@ section {
   }
   .social-header ul img {
     width: 20px;
+    cursor: pointer;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .social-header ul img:hover {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
   .hero {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 66% auto;
-        grid-template-columns: 66% auto;
+    -ms-grid-columns: 77% auto;
+        grid-template-columns: 77% auto;
     background: unset;
     padding: 0;
   }
@@ -306,6 +314,32 @@ section {
   }
   .hero .content {
     padding: 9em 20em 6em 20em;
+  }
+}
+
+.line {
+  animation: lineAnim 1s infinite alternate-reverse;
+}
+
+@-webkit-keyframes lineAnim {
+  from {
+    -webkit-transform: translate(205px, 709px);
+            transform: translate(205px, 709px);
+  }
+  to {
+    -webkit-transform: translate(205px, 750px);
+            transform: translate(205px, 750px);
+  }
+}
+
+@keyframes lineAnim {
+  from {
+    -webkit-transform: translate(205px, 709px);
+            transform: translate(205px, 709px);
+  }
+  to {
+    -webkit-transform: translate(205px, 750px);
+            transform: translate(205px, 750px);
   }
 }
 /*# sourceMappingURL=main.css.map */

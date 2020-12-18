@@ -10,43 +10,48 @@
 <body>
      <div class="nav-container">
          <header>
-             <a href="index.html" class="logo">GraceKalombo</a>
+             <a href="index.html" class="logo">Grace K.</a>
 
              <nav>
                  <ul>
-                     <a href="#">My work</a>
-                     <a href="#">My Skills</a>
-                     <a href="#">Hire Me</a>
+                     <a href="#work">Works</a>
+                     <a href="#skills">Skills</a>
+                     <a href="#hire">HireMe</a>
                  </ul>
              </nav>
          </header>
          <div class="social-header">
              <ul>
                  <li>
-                    <i class="fa fa-behance" aria-hidden="true">Be</i>
+                    <img src="./images/linkedin.png" alt="linkedin" style="margin-right: 20px;">
                  </li>
-                 <li><i class="fa fa-dribbble" aria-hidden="true">D</i></li>
-                 <li><i class="fa fa-github" aria-hidden="true">G</i></li>
+                 <li>
+                     <img src="./images/github.png" alt="github" style="margin-right: 20px;">
+                 </li>
+                 <li>
+                     <img src="./images/dribble.png" alt="dribble">
+                 </li>
              </ul>
          </div>
      </div>
 
      <div class="hero">
          <div class="content">
-             <h1>Beautifully Crafted Web Eperiences</h1>
+             <h1 class="stagger1">Beautifully Crafted Web Eperiences</h1>
              <div class="meet">
-                 <span>&#8618;</span>
-                 <p>Meet Grface Kalombo</p>
+                 <span style="margin-right: 5px;">&xrarr;</span>
+                 <p class="stagger1">Meet Grace Kalombo</p>
              </div>
-             <svg class="scroll" width="40" height="77" viewBox="0 0 35 75">
+             <svg class="stagger1" width="40" height="77" viewBox="0 0 35 75">
                 <g id="scroll" transform="translate(-194 -696)">
                   <g id="Rectangle_3" data-name="Rectangle 3" transform="translate(194 696)" fill="none" stroke="#fbf3f3" stroke-width="4">
                     <rect width="35" height="75" rx="17.5" stroke="none"/>
                     <rect x="2" y="2" width="31" height="71" rx="15.5" fill="none"/>
                   </g>
-                  <circle id="Ellipse_1" data-name="Ellipse 1" cx="7" cy="7" r="7" transform="translate(205 709)" fill="#fff"/>
+                  <circle class="line" id="Ellipse_1" data-name="Ellipse 1" cx="7" cy="7" r="7" transform="translate(205 709)" fill="#fff"/>
                 </g>
-              </svg>   
+              </svg>
+              
          </div>
 
          <svg class="hero-design" xmlns="http://www.w3.org/2000/svg" width="669" height="589" viewBox="0 0 669 589">
@@ -75,7 +80,7 @@
          <img src="./images/project.png" alt="featured projct" class="righttransition2">
      </section>
 
-     <section class="skills">
+     <section class="skills" id="skills">
          <div class="skills-container">
              <ul>
                  <li class="transition2">
@@ -154,5 +159,65 @@
 
          </div>
      </section>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js" integrity="sha512-wK2NuxEyN/6s53M8G7c6cRUXvkeV8Uh5duYS06pAdLq4ukc72errSIyyGQGYtzWEzvVGzGSWg8l79e0VkTJYPw==" crossorigin="anonymous"></script>
+     <script>
+         //register plugin
+         gsap.registerPlugin(ScrollTrigger);
+         //create a timeline
+         var tl = gsap.timeline();
+
+         tl.from('.content', {
+             y:'-50%',
+             opacity:0,
+             duration:2,
+             ease: Power4.easeOut
+         })
+
+         tl.from('.stagger1', {
+             opacity:0,
+             y:'-50',
+             stagger: .3,
+             ease: Power4.easeOut,
+             duration:2
+         }, "-=1.5");
+
+         tl.from('.hero-design',{
+             opacity:0,
+             y:50,
+             ease: Power4.easeOut,
+             duration:1
+         }, "-=2")
+
+         gsap.from(".square-anim",{
+             stagger: .2,
+             scale: 0.1,
+             duration: 2,
+             ease: Power4.easeOut
+         })
+
+         gsap.from(".transition2",{
+            ScrollTrigger:{
+                trigger:'.transition2',
+                start: 'top bottom'
+            },
+            y:50,
+            opacity:0,
+            duration:1.2,
+            stagger:1.3
+         })
+
+         gsap.from(".transition3",{
+            ScrollTrigger:{
+                trigger:".transition3",
+                start: "top center"
+            },
+            y:50,
+            opacity:0,
+            duration:1.2,
+            stagger:.6
+         })
+     </script>
 </body>
- 
+ </html>
